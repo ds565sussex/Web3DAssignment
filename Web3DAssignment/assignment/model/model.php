@@ -6,17 +6,17 @@ class Model {
 
 	public function __construct()
 	{
-		// $dsn = 'sqlite:./db/test1.db';
-		// try {	
-		// 	$this->dbhandle = new PDO($dsn, 'user', 'password', array(
-    	// 												PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
-    	// 												PDO::ATTR_EMULATE_PREPARES => false, // turn off emulation mode for "real" prepared statements
-		// 												));
-		// }
-		// catch (PDOEXception $e) {
-		// 	echo "Can't connect to the database!";
-        // 	print new Exception($e->getMessage());
-    	// }
+		 $dsn = 'sqlite:./db/test1.db';
+		 try {	
+		 	$this->dbhandle = new PDO($dsn, 'user', 'password', array(
+    	 												PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
+    	 												PDO::ATTR_EMULATE_PREPARES => false, // turn off emulation mode for "real" prepared statements
+		 												));
+		 }
+		 catch (PDOEXception $e) {
+		 	echo "Can't connect to the database!";
+         	print new Exception($e->getMessage());
+    	 }
 	}
 
 	public function dbCreateTable()
