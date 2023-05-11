@@ -1,0 +1,323 @@
+@font-face {
+    font-family: drPepperFont;
+    src: url(../assets/fonts/loki_cola/DrPeppers.ttf);
+}
+
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: spriteFont;
+    src: url(../assets/fonts/loki_cola/Verlag-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: fantaFont;
+    src: url(../assets/fonts/loki_cola/fanta.ttf);
+}
+
+@font-face {
+    font-family: header;
+    src: url(../assets/fonts/loki_cola/Morton.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../assets/fonts/loki_cola/Poppins-Medium.ttf);
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#underline{
+    text-underline-offset: 10px;
+    text-decoration: black underline;
+    text-decoration-thickness: 2px;
+}
+
+
+/* Nav Bar */
+
+.logo {
+    margin-top: 3px;
+    margin-bottom: 10px; /* add some spacing between the logo and the flex items */
+}
+
+.logo h1{
+    font-family: cocaColaFont;
+    font-size: 51px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    color: white;
+}
+
+.logo h2 {
+    font-family: cocaColaFont;
+    font-size: 51px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    color: white;
+}
+    
+.logo p {
+    font-size: 7px;
+    margin-top: 22px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+.dot {
+    margin-left: 5px;
+}
+
+/* Cards */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.coke-card .card{
+   	background: linear-gradient(-25deg, #991821, #901B2B, #AD272E);
+    background-size: 400% 400%;
+    border-radius: 10px;
+
+}
+
+.coke-card .card:hover{
+    cursor: pointer;
+   	background: linear-gradient(-25deg, #991821, #901B2B, #AD272E);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+.coke-card-txt {
+    font-family: cocaColaFont;
+}
+
+.coke-card-txt h1{
+    font-size: 61px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.coke-card-txt h2{
+    font-size: 61px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+}
+
+
+.sprite-card .card{
+    background: linear-gradient(-25deg, #6BB64A, #008B47, #F8CD24);
+    background-size: 400% 400%;
+    border-radius: 10px;
+}
+
+.sprite-card .card:hover{
+    cursor: pointer;
+    background: linear-gradient(-25deg, #6BB64A, #008B47, #F8CD24);
+    background-size: 500% 500%;
+	animation: gradient 3s ease;
+    animation-fill-mode: forwards;
+}
+
+.sprite-card-txt{
+    font-family: spriteFont;
+}
+
+.sprite-card-txt h1{
+    font-size: 61px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.fanta-card .card{
+    background: linear-gradient(65deg, #70BF44, #F7941E, #F7941E, #2D3092);
+    background-size: 200% 200%;
+    border-radius: 10px;
+}
+
+.fanta-card .card:hover{
+    cursor: pointer;
+    background: linear-gradient(65deg, #70BF44, #F7941E, #F7941E, #2D3092);
+    background-size: 500% 500%;
+	animation: gradient 3s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+.fanta-card-txt{
+    font-family: fantaFont;
+}
+
+.fanta-card-txt h1{
+    font-size: 61px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.pepper-card .card{
+    background: linear-gradient(-25deg, #D31145, #8C002A);
+    background-size: 400% 400%;
+    border-radius: 10px;
+}
+
+.pepper-card .card:hover{
+    cursor: pointer;
+    background: linear-gradient(-25deg, #D31145, #8C002A);
+    background-size: 500% 500%;
+	animation: gradient 3s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+.pepper-card-txt{
+    font-family: drPepperFont;
+}
+
+.pepper-card-txt h1{
+    font-size: 61px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.sub-title{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sub-title-text{
+   font-family: poppins; 
+}
+
+/* Models */
+  .model3D  {
+    min-width: 1000px;
+    max-height: 200px;
+}
+
+X3D, x3d {
+    background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+    border-radius: 5px;
+    border: 0px solid rgba(255, 0, 0, 1.0);
+    width: 100%;
+    height: 100%
+    
+}
+
+.page-title{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: poppins; 
+    text-underline-offset: 10px;
+    text-decoration: black underline;
+    text-decoration-thickness: 2px;
+   
+}
+
+.other-products{
+    font-family: poppins;
+    text-underline-offset: 10px;
+    text-decoration: black underline;
+    text-decoration-thickness: 2px;
+    
+}
+
+.gallery{
+    height: 70vh; 
+    overflow-y: scroll; 
+    margin-top:20px;
+    border: 1px black solid;
+    margin-right: 20px;
+}
+
+.gallery-image{
+    width: 200px;
+    margin-top:20px; 
+
+}
+
+.gallery-image:hover{
+    cursor: pointer;
+    width: 300px;
+}
+
+.gallery-image-coke{
+    width: 120px;
+    margin-top:20px; 
+    cursor: pointer;
+}
+
+.gallery-image-coke:hover{
+    width: 200px; 
+    cursor: pointer;
+}
+
+.x3d-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (min-width: 476px) {
+    body{
+        overflow: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+}
